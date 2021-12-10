@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dang nhap he thong</title>
+</head>
+<body>
+<script>
+let TK = prompt("Nhap tai khoan")
+if (TK == "Admin"){
+    let MK = prompt("Nhap mat khau")
+    if(MK == "TheMaster"){
+        alert("Welcome")
+    }else if (MK == ""){
+        alert("Cancled")
+    }else {
+        alert("Sai mat khau")
+    }
+}else if (TK == ""){
+    alert("Cancled")
+}else {
+    alert("Tui khum biet ban")
+}
+
+
+</script>
+</body>
+</html>
