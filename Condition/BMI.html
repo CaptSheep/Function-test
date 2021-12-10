@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Chi so BMI</title>
+</head>
+<body>
+
+<script>
+    let chisochieucao = prompt("Chi so chieu cao la");
+    let chisocannang =  prompt("Chi so can nang la");
+    parseInt(chisochieucao);
+    parseInt(chisocannang);
+let BMI = (chisocannang / (chisochieucao * chisochieucao))
+    if (BMI < 18.5){
+        alert("Under Weigh")
+    }else if ( BMI <25 ){
+        alert( "Normal")
+    }else if ( BMI < 30){
+        alert('Over Weight')
+    }else {
+        alert("Obese")
+    }
+</script>
+</body>
+</html>
