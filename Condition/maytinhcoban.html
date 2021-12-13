@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May tinh co ban</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input type="text" id="ketqua"></td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="input('(')">(</button>
+        </td>
+        <td>
+            <button onclick="input(')')">)</button>
+        </td>
+        <td>
+            <button onclick="input('%')">%</button>
+        </td>
+        <td>
+            <button onclick="Reset()" id="reset">AC</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="input(7)">7</button>
+        </td>
+        <td>
+            <button onclick="input(8)">8</button>
+        </td>
+        <td>
+            <button onclick="input(9)">9</button>
+        </td>
+        <td>
+            <button onclick="input('*')">*</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="input(4)">4</button>
+        </td>
+        <td>
+            <button onclick="input(5)">5</button>
+        </td>
+        <td>
+            <button onclick="input(6)">6</button>
+        </td>
+        <td>
+            <button onclick="input('/')">/</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="input(1)">1</button>
+        </td>
+        <td>
+            <button onclick="input(2)">2</button>
+        </td>
+        <td>
+            <button onclick="input(3)">3</button>
+        </td>
+        <td>
+            <button onclick="input('-')">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="input(0)">0</button>
+        </td>
+        <td>
+            <button onclick="input('.')">.</button>
+        </td>
+        <td>
+            <button onclick="Ketqua()">=</button>
+        </td>
+        <td>
+            <button onclick="input('+')">+</button>
+        </td>
+    </tr>
+    <script>
+        function input(Kytu) {
+            document.getElementById('ketqua').value += Kytu;
+        }
+
+        function Ketqua() {
+            let Bieuthuc = document.getElementById('ketqua').value;
+            document.getElementById('ketqua').value = eval(Bieuthuc);
+        }
+
+    </script>
+</table>
+</body>
+</html>

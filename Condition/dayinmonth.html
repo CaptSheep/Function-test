@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So ngay trong mot thang</title>
+</head>
+<body>
+<input type="text" id="dauvao" placeholder="Nhap thang">
+<button id="click" onclick="Click()">Tinh so ngay</button>
+<script>
+    function Click() {
+        document.getElementById("click")
+        let Date = document.getElementById("dauvao").value;
+        switch ( +Date) {
+            case (2):
+                document.write( document.getElementById("dauvao").value  + " la thang co 28 ngay hoac 29 ngay");
+                break;
+            case (1):
+            case (3):
+            case (5):
+            case (7):
+            case (8):
+            case (10):
+            case (12):
+                document.write((document.getElementById("dauvao").value + " la thang co 31 ngay"));
+                break;
+            default:
+                document.write((document.getElementById("dauvao").value + " git la thang co 30 ngay"));
+                break;
+        }
+    }
+
+</script>
+</body>
+</html>
