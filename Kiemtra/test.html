@@ -8,10 +8,9 @@
 <script>
     // Bai 1 : Cau lenh hien hop thoai:
 
-    document.write("Kon chim pay qua")
+    alert("Kon chim pay qua")
     document.write("<br>")
-    document.write("Minh la Long")
-
+    alert("Minh la Long")
 
     // Bai 2 : nhan gia tri tu 1 hop thoai
       let a =  prompt(" nhap so ")
@@ -63,7 +62,10 @@
     // d) nhap a la nam => the ki
     let a = +prompt("Nhap so nam");
         let centery = Math.floor(a /100)
-    document.write( a + " la nam thuoc the ki : " + centery);
+    if (centery % 1000 == 0){
+        document.write( a + " la nam thuoc the ki : " + centery);
+    }
+
 
 
     // e) kiem tra a,b,c
@@ -78,7 +80,7 @@
             document.write("Day la tam giac deu");
         }else if ((a==b || a==c || b==c)){
             document.write("Day la tam giac can")
-        }
+        }else if ()
     }
 
 
