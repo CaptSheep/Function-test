@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<script>
+
+    //Bai 1 : in tu 1 - 100
+
+    function printNum(){
+        for ( let i = 0; i <= 100 ; i ++) {
+            document.write(i + "<br>")
+        }
+    }printNum()
+
+
+    //Bai 2 :In 1 so tu 1 den Num
+
+    function printNum(){
+        let number = prompt("Nhap so muon in")
+        for ( i = 0 ; i <= number ; i ++){
+            document.write(i + "<br>")
+        }
+    }printNum()
+
+
+    //Bai 3 :Tra ve binh phuong so do
+    function printNum(){
+        let number = prompt(" Nhap so can tinh binh phuong")
+        let sqr = Math.pow(number,2)
+        document.write( " Binh phuong cua so nhap vao la : " + sqr)
+    }printNum()
+
+
+    //Bai 4 : Tra ve tich 2 so
+    function printNum(){
+        let a = prompt( " Nhap so thu nhat :");
+        let b =  prompt(" Nhap so thu hai : ");
+        let c = a * b;
+        document.write("Tich 2 so vua nhap la : " + c)
+    } printNum()
+
+
+    //Bai 5 :Tong cac phan tu cua mang
+    function printNum(){
+        let a = [1,5,7,2,8,10,9]
+        let tong = 0
+        for ( i = 0 ; i < a.length; i ++){
+            tong += a[i]
+        }
+        document.write( " Tong cac so trong mang la : " + tong)
+    }printNum()
+
+
+
+    //Bai 6 : Tim so chan trong mang
+    function printNum(){
+        let a = [1,5,7,2,8,10,9]
+        for ( i = 0 ; i < a.length ; i ++ ){
+            if (a[i] % 2 == 0){
+                document.write( " So chan trong mang la " + a[i])
+            }
+        }
+    }printNum()
+
+
+
+    //Bai 7 : Tra ve vi tri cua tung so
+    function printNum(){
+        let a = [1,5,7,2,8,10,9]
+        for ( i = 0 ; i < a.length ; i ++){
+            let index = i
+            document.write ( " Phan tu " + a[i] + " co vi tri trong mang la : " + index + "<br>")
+        }
+    }printNum()
+
+
+</script>
+</body>
+</html>
